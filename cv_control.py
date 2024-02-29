@@ -8,9 +8,9 @@ import math
 from pyfirmata import Arduino, SERVO
 from time import sleep
 
-PORT = '/dev/ttyACM0'
+PORT = ''
 board = Arduino(PORT)
-PIN = board.get_pin('d:9:s')
+PIN = board.get_pin('d:6:s')
 
 mp_drawing = mp.solutions.drawing_utils
 mp_hands = mp.solutions.hands
