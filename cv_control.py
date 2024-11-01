@@ -69,8 +69,8 @@ class HandServoApp:
         cv2.destroyAllWindows()
 
 if __name__ == "__main__":
-    PORT = ''  # Specify your Arduino port here
-    PIN = 6    # Specify the pin number for the servo
+    PORT = ''  # Arduino com port
+    PIN = 6    
     servo_controller = ServoController(PORT, PIN)
     app = HandServoApp(servo_controller)
     app.run()
